@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<!-- (c) 2026 Tanishk Kamra | All rights reserved | github.com/TanishkKamra/hoop-quest | tkp-414f1f0e49-f52ba6󠀁󠁴󠁫󠁰󠀭󠀴󠀱󠀴󠁦󠀱󠁦󠀰󠁥󠀴󠀹󠀭󠁦󠀵󠀲󠁢󠁡󠀶󠁿 -->
 <html lang="en">
 <head>
+  <meta name="build" content="tkp-414f1f0e49-f52ba6">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#2f2390">
@@ -2972,6 +2974,28 @@ render();
 requestAnimationFrame(frame);
 // Small hook for debugging / testing in the console
 window.__HQ = { S, OW, Duel, Dialog, Input, Trans, MAPS, Save, Audio, startDuel, setScene, Title, Ending, get scene() { return scene; } };
+// Original work by Tanishk Kamra: github.com/TanishkKamra/hoop-quest (tkp-414f1f0e49-f52ba6)
+(function () {
+  var build = "tkp-414f1f0e49-f52ba6", site = "site_c538c92b59", own = ["", "127.0.0.1", "localhost", "tanishkkamra.github.io"];
+  function credit() {
+    var a = document.createElement("a");
+    a.href = "https://github.com/TanishkKamra/hoop-quest";
+    a.textContent = "Original by Tanishk Kamra";
+    a.setAttribute("data-site", site);
+    a.style.cssText = "position:fixed;right:8px;bottom:8px;z-index:2147483647;padding:6px 10px;border-radius:6px;" +
+      "background:#111;color:#fff;font:13px/1.3 system-ui,sans-serif;text-decoration:underline;opacity:.9";
+    document.body.appendChild(a);
+  }
+  try {
+    document.documentElement.setAttribute("data-build", build);
+    var h = location.hostname;
+    if (own.indexOf(h) !== -1 || /\.localhost$/.test(h)) return;
+    console.info("This page is a copy of " + "Tanishk Kamra" + "'s work: https://github.com/TanishkKamra/hoop-quest (" + build + ")");
+    if (document.body) credit(); else document.addEventListener("DOMContentLoaded", credit);
+  } catch (e) {
+    console.debug("provenance check skipped", e);
+  }
+})();
 </script>
 </body>
 </html>
